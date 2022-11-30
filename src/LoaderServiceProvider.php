@@ -38,7 +38,7 @@ class LoaderServiceProvider extends ServiceProvider
     protected function registerRouter(){
         $this->app['router']->group([],function($router){
             /* @var \Illuminate\Routing\Router $router */
-            $router->get(Loader::route(),function (Request $request){
+            $router->post(Loader::route(),function (Request $request){
                 Loader::manufacture($request);
             });
         });
