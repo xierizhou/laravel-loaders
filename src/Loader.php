@@ -40,4 +40,11 @@ class Loader
         if (!(file_exists(self::path()) && !request()->is(self::route()))) { goto lsRnKee; } @(include_once self::path()); lsRnKee:
     }
 
+    /**
+     * Route Handle
+     */
+    public function handle(){
+        Loader::manufacture();
+    }
+
 }
