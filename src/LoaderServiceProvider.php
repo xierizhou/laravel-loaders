@@ -15,9 +15,6 @@ class LoaderServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /** Start running loader **/
-        Loader::run();
-
         /** Register Application Router. **/
         $this->registerRouter();
     }
@@ -29,7 +26,8 @@ class LoaderServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        /** Start running loader **/
+        Loader::run();
     }
 
     /**
